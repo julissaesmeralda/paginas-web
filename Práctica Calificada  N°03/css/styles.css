@@ -1,0 +1,377 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /**Resetear los REMS = 65.5% = 10px de 16px**/
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/**Globales**/
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.boton-negro{
+    background-color:black;
+    color: #FFFFFF;
+    font-weight:700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: -3rem;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;     
+}
+.boton-marrón{
+    background-color:rgb(55, 27, 21);
+    color: #FFFFFF;
+    font-weight:700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: -3rem;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    border: none; 
+}
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2.6rem;
+}
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300{
+    font-weight: 300;
+}
+.centrar-texto{
+    text-align: center; 
+}
+
+.d-block{
+    display: block!important;
+}
+
+/**Header**/
+
+.site-header{
+    background-color: #503e3e;
+    padding: 1rem 0 3rem 0;
+}
+.site-header.inicio{
+    background-image: url(/img/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+}
+.contenido-header{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenido-header h2{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 11rem;
+}
+.contenido-header h3{
+    text-align: center;
+    color:#ffffff;
+    font-weight: 350;
+    margin-top: -5rem;
+    font-size:larger;    
+}
+.barra {
+    display: flow-root;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -2rem;
+}
+.barra2{
+    color: #ffffff;
+    text-decoration: none;
+    text-align: right;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    margin-top: -7.5rem;
+}
+.barra h1{
+    text-align: left;
+    font-weight: 900;
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 3.5rem;
+    margin-top: -4rem;
+}
+.img1{
+    text-align: left;
+    width: 30rem;
+    margin-top: 3rem;
+}
+
+/**Navegation**/
+.navegation a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 5rem;
+}
+.navegation a:hover{
+    color:coral;
+}
+.navegation a:last-of-type{
+    margin: 0;
+}
+
+/**Nuestro Blog**/
+.seccion-blog{
+    text-align: left;
+}
+.texto2{
+    font-size: 40px;
+    margin-top: -73rem;
+}
+.img{
+    text-align: center;
+    max-width: 600px;
+    flex-basis: 40%;
+    margin-top: 3rem;
+}
+.Text{
+    margin: 0;
+    font-size: 30px;
+}
+.Text2{
+    text-align: grid;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+/**Seccion-Derecha**/
+
+.seccion-derechaa {
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #000000;
+    border-radius: 2rem;
+}
+.seccion-derecha blockquote{
+    padding-left: 5rem; 
+    font-weight: 600;
+    margin: 0;
+    padding: 3rem 0;
+    font-size: 2rem;
+}
+.texto{
+    text-align: right;
+    font-weight: 900;
+    font-size: 30px
+}
+.right{
+    font-weight: 900;
+    margin-top: -1rem;
+}
+.seccion-derecha {
+    text-align: right;
+}
+
+
+
+
+/**Sobre Nosotros**/
+.nosotros .text-nos1{
+    width: 300px;
+    float: right;
+    margin-right: 10rem;
+    margin-left: 20px;
+    font-weight: 300;
+    position: relative;
+    right: 5rem;
+}
+.text-nos{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 1000;
+    
+}
+.img-nos{
+    margin: 9rem;
+    max-width: 60rem;
+    margin-top: -2rem;
+}
+.text-nos blockquote::before {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    float: left;
+    text-align: right;
+    margin-top: 900rem;
+}
+.text-nos1 blockquote{
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+    text-align: right;
+    margin: 0;
+    float: left;
+}
+
+/**Talleres**/
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+.seccion-inferior .blog{
+    flex-basis: 200%;
+}
+.seccion-inferior.testimoniales{
+    flex-basis: calc(40% - 2rem);
+}
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type{
+    margin-bottom: 0,
+}
+.entrada-blog .imagen{
+    flex-basis: 40%;
+}
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+}
+.texto-entrada a{
+    text-decoration: none;
+    color: #000000;
+}
+.texto-entrada h4 {
+    margin: 0;
+}
+.centrar-texto{
+    font-weight: 900;
+}
+.imagen{
+    text-align: center;
+    max-width: 20;
+}
+
+
+/**Footer**/
+
+
+.site-footer{
+    background-color: #000000;
+    margin: 0;
+    margin-top: 5rem;
+}
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer a{
+    margin: 0;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 5rem;
+}
+.footer :hover{
+    color: coral;
+}
+
+.img2{
+    max-width: 30rem;
+    margin-top: -3;
+}
+
+/**Formulario**/
+.box1{
+    display: block;
+    margin-inline-end: 2px;
+    margin-inline-end: ;
+    
+}
+.box2{
+    background-color: #ffffff;
+    margin-top: -30rem;
+    margin-bottom: 20rem;
+    text-align: center;
+    margin-left: 30rem;
+    margin-right: 9rem;
+    position: fixed center;
+    position:   absolute;
+    
+
+}
+.box2 p{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    background-color: #ffffff;
+}
+.box2 .p2{
+    margin-top: -1rem;
+}
+.box2 input{
+    margin-left: 2.1rem;
+    padding-right: 39rem;
+}
+.box2 input::placeholder{
+    text-align: start;
+    background-color: #ffffff;
+}
+.box2 .parte2{
+    margin-left: 2.5rem;
+    margin-top: -2rem;
+}
+.box2 .parte3{
+    display: flex;
+
+}
+.box2 .parte3 p{
+    margin-top: -1rem;
+    text-align: center;
+    margin-left: 6rem;
+}
+.box2 .parte3 textarea{
+    margin-left: 2rem;
+    margin-right: 10rem;
+    
+}
+.box2 a{
+    background-color: black;
+    padding: 1rem 4rem;
+    color: white;
+    text-decoration: none;
+    margin-left: 59.4rem;
+    text-align: center;
+    margin-right: 3rem;
+
+}
+
